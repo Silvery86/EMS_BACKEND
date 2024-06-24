@@ -11,7 +11,7 @@ public class DepartmentMapper {
         return departmentDto;
     }
 
-    public static Department mapToEmployee(DepartmentDto departmentDto){
+    public static Department mapToDepartment(DepartmentDto departmentDto){
         Department department = new Department();
         BeanUtils.copyProperties(departmentDto, department);
         return department;
